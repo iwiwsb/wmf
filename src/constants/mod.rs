@@ -68,3 +68,24 @@ pub const META_CREATEPENINDIRECT: u16 = 0x02FA;
 pub const META_CREATEFONTINDIRECT: u16 = 0x02FB;
 pub const META_CREATEBRUSHINDIRECT: u16 = 0x02FC;
 pub const META_CREATEREGION: u16 = 0x06FF;
+
+/// Paints a single, constant color, either solid or dithered
+pub const BS_SOLID: u16 = 0x0000;
+/// Does nothing. Using a BS_NULL brush in a graphics operation MUST have the same effect as using no brush at all
+pub const BS_NULL: u16 = 0x0001;
+///  Paints a predefined simple pattern, or "hatch", onto a solid background
+pub const BS_HATCHED: u16 = 0x0002;
+/// Paints a pattern defined by a bitmap, which can be a [`Bitmap16`](crate::objects::Bitmap16) or a [`DeviceIndependentBitmap`](crate::objects::DeviceIndependentBitmap)
+pub const BS_PATTERN: u16 = 0x0003;
+/// Not supported
+pub const BS_INDEXED: u16 = 0x0004;
+/// A pattern brush specified by a [`DeviceIndependentBitmap`](crate::objects::DeviceIndependentBitmap)
+pub const BS_DIBPATTERN: u16 = 0x0005;
+/// A pattern brush specified by a [`DeviceIndependentBitmap`](crate::objects::DeviceIndependentBitmap)
+pub const BS_DIBPATTERNPT: u16 = 0x0006;
+/// Not supported
+pub const BS_PATTERN8X8: u16 = 0x0007;
+/// Not supported
+pub const BS_DIBPATTERN8X8: u16 = 0x0008;
+/// Not supported
+pub const BS_MONOPATTERN: u16 = 0x0009;

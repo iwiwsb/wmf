@@ -1,4 +1,8 @@
-pub struct Brush {}
+pub struct Brush {
+    brush_style: [u8; 2],
+    color_ref: [u8; 4],
+    brush_hatch: Box<[u8]>,
+}
 
 pub struct Font {}
 
